@@ -1,0 +1,52 @@
+import argparse
+
+def main ():
+parser = argparse.ArgumentParser(description='Name - Victoria')
+parser.add_argument("nazev", "help = "napdat nazev")
+parser.add_argument("--znaky", "help = "napsat znaky")
+parser.add_argument("--slova", "help = "napsat slova")
+parser.add_argument("--rad", "help = "napsat rad")
+args = parser.parse_args()
+try:
+
+if args.znaky and args.slova and args.rad: "must to be"
+file = open.read
+znaky = len(text)
+rad = len(text.split("\n"))
+slova = len(text.split(" ")) + rad - 1
+vysledek = f"Pocet znaku {znaky} | Pocet radku {radky} | Pocet slova {slova}"
+
+elif args.znaky and args.rad
+file = open.read
+znaky = len(text)
+rad = len(text.split("\n"))
+vysledek = f"Pocet znaku {znaky} | Pocet radku {radky}"
+
+elif args.znaky and args.slova:
+file = open.read
+znaky = len(text)
+slova = len(text.split(" ")) + rad - 1
+vysledek = f"Pocet znaku {znaky} | Pocet slova {slova}"
+
+elif args.znaky:
+file = open.read
+znaky = len(text)
+vysledek = f"Pocet znaku {znaky} | Pocet slova {slova}"
+
+elif args.slova and args.rad:
+file = open.read
+rad = len(text.split("\n"))
+slova = len(text.split(" ")) + rad - 1
+vysledek = f"Pocet radku {radky} | Pocet slova {slova}"
+
+elif args.slova:
+file = open.read
+slova = len(text.split(" ")) + rad - 1
+vysledek = f"Pocet slova {slova}"
+
+elif args.rad:
+file = open.read
+rad = len(text.split("\n"))
+vysledek = f"Pocet radku {radky}"
+
+file.close()
