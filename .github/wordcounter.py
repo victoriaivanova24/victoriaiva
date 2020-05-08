@@ -16,13 +16,13 @@ file = open(args.nazev)
 znaky = len(text)
 rad = len(text.split("\n"))
 slova = len(text.split(" ")) + (rad - 1)
-vysledek = f"Pocet znaku {znaky} | Pocet radku {radky} | Pocet slova {slova}"
+vysledek = f"Pocet znaku {znaky} | Pocet radku {rad} | Pocet slova {slova}"
 
-elif args.znaky and args.rad
+elif args.znaky and args.rad:
 file = open(args.nazev)
 znaky = len(text)
 rad = len(text.split("\n"))
-vysledek = f"Pocet znaku {znaky} | Pocet radku {radky}"
+vysledek = f"Pocet znaku {znaky} | Pocet radku {rad}"
 
 elif args.znaky and args.slova:
 file = open(args.nazev)
@@ -39,7 +39,7 @@ elif args.slova and args.rad:
 file = open(args.nazev)
 rad = len(text.split("\n"))
 slova = len(text.split(" ")) + (rad - 1)
-vysledek = f"Pocet radku {radky} | Pocet slova {slova}"
+vysledek = f"Pocet radku {rad} | Pocet slova {slova}"
 
 elif args.slova:
 file = open(args.nazev)
@@ -49,6 +49,12 @@ vysledek = f"Pocet slova {slova}"
 elif args.rad:
 file = open(args.nazev)
 rad = len(text.split("\n"))
-vysledek = f"Pocet radku {radky}"
+vysledek = f"Pocet radku {rad}"
 
+  except:
+   print("Chyba...")
+   sys.exit()
+                    
+print(vysledek)
+if __name__=="__main__"                    
 file.close()
