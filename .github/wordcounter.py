@@ -57,4 +57,3 @@ vysledek = f"Pocet radku {rad}"
                     
 print(vysledek)
 if __name__=="__main__"                    
-file.close()
